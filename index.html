@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<!--
+		<div id="menu-outer">
+			<div class="table">
+				<ul class="horizontal-list">
+  					<li><a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a></li>
+  					<li><a href="advantages.html">Advantages</a></li>
+  					<li><a href="features.html">Features</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="download.html">Download</a></li>
+				</ul>
+			</div>
+		</div>
+	-->
+<!--	
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a>
+  <a href="advantages.html">Advantages</a>
+  <a href="features.html">Features</a>
+  <a href="support.html">Support</a>
+  <a href="download.html">Download</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="expand.jpg" class="logo_expand" alt="Home"></a>
+</div>
+-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a>
+  <a href="advantages.html">Advantages</a>
+  <a href="features.html">Features</a>
+  <a href="support.html">Support</a>
+  <a href="download.html">Download</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	
+			<div class="gap"></div>
+
+
+	<div id="main">
+		<div class="row1">
+  			<div class="column1">
+    			<h2>Center</h2>
+    			<p>Center is a simple android app that allows you simultaneous web browsing and music playback.</p>
+  			</div>
+  			<div class="column">
+				  <img class="img_main1" src="main.png" alt="Image">
+  				  <img class="img_main1" src="wiki.png" alt="Image">
+  				  <img class="img_main1" src="wiki_music.png" alt="Image">
+			</div>
+		</div>
+		
+	</div>	
+	
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main1");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    	x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+	
+	<footer>
+		<div id="menu-footer">
+				<p>Copyright ©Center.si, All rights reserved</p>
+				<a href="terms.html">Terms of use</a>
+				<a href="privacy.html">Privacy policy</a>
+		</div>
+	</footer>
+</body>
+</html>

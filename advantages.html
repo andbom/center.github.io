@@ -1,0 +1,191 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>advantages</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>	
+<body>
+	<!--
+		<div id="menu-outer">
+			<div class="table">
+				<ul class="horizontal-list">
+  					<li><a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a></li>
+  					<li><a href="advantages.html">Advantages</a></li>
+  					<li><a href="features.html">Features</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="download.html">Download</a></li>
+				</ul>
+			</div>
+		</div>
+	-->
+<!--
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a>
+  <a href="advantages.html">Advantages</a>
+  <a href="features.html">Features</a>
+  <a href="support.html">Support</a>
+  <a href="download.html">Download</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="expand.jpg" class="logo_expand" alt="Home"></a>
+</div>
+-->	
+	
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a>
+  <a href="advantages.html">Advantages</a>
+  <a href="features.html">Features</a>
+  <a href="support.html">Support</a>
+  <a href="download.html">Download</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	<div class="gap"></div>
+	
+	<div id="main">
+		<div class="row1">
+  			<div class="column1">
+  			  <h2>Web browsing and music playback in one app</h2>
+  			  <p>No one wants to use a thousand different apps for features that could easily be integrated into a single platform. So why should you? Here you can have control of your music and web content in single frame.&nbsp; &nbsp; &nbsp; &nbsp; <br>
+		      </p>
+  			</div>
+  			<div class="column">
+    			  <img class="img_main1" src="google.png" alt="Image">
+  				  <img class="img_main1" src="google_music.png" alt="Image">
+  			</div>
+		</div>
+		
+		<div class="row2">
+  			<div class="column">
+    			  <img class="img_main2" src="main.png" alt="Image">
+  				  <img class="img_main2" src="add.png" alt="Image">
+  			</div>
+			<div class="column2">
+			  <h2>All favourite websites at your fingertips</h2>
+			  <p>How to quickly access your favourites? In this app you simply open Apps tabs and all of your favourite websites are only one click away.</p>
+			</div>
+		</div>
+		
+		<div class="row1">
+  			<div class="column1">
+  			  <h2>Browse web and play/control your music at the same time</h2>
+  			  <p>Remember having to constantly switch between music player and web browser when you only want to skip a song or perhaps just want a replay. No more! This app will allow you to do both and much more "on the fly".<br>
+		      </p>
+  			</div>
+  			<div class="column">
+    			  <img class="img_main3" src="wiki.png" alt="Image">
+  				  <img class="img_main3" src="wiki_music.png" alt="Image">
+  			</div>
+		</div>
+		
+	</div>	
+	
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<!--	
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+-->
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main1");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    	x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+	
+		<script>
+		var myIndex1 = 0;
+		carousel1();
+
+		function carousel1() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main2");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex1++;
+    	if (myIndex1 > x.length) {myIndex1 = 1}    
+    	x[myIndex1-1].style.display = "block";  
+    	setTimeout(carousel1, 4000); // Change image every 2 seconds
+}
+</script>
+	
+		<script>
+		var myIndex2 = 0;
+		carousel2();
+
+		function carousel2() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main3");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex2++;
+    	if (myIndex2 > x.length) {myIndex2 = 1}    
+    	x[myIndex2-1].style.display = "block";  
+    	setTimeout(carousel2, 4000); // Change image every 2 seconds
+}
+</script>
+	
+	<!--
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  
+  <a href="#about">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div style="padding-left:16px">
+  <h2>Responsive Topnav with Dropdown</h2>
+  <p>Resize the browser window to see how it works.</p>
+  <p>Hover over the dropdown button to open the dropdown menu.</p>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	-->
+
+	<footer>
+		<div id="menu-footer">
+				<p>Copyright ©Center.si, All rights reserved</p>
+				<a href="terms.html">Terms of use</a>
+				<a href="privacy.html">Privacy policy</a>
+		</div>
+	</footer>
+</body>
+</html>

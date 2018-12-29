@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>features</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!--
+		<div id="menu-outer">
+			<div class="table">
+				<ul class="horizontal-list">
+  					<li><a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a></li>
+  					<li><a href="advantages.html">Advantages</a></li>
+  					<li><a href="features.html">Features</a></li>
+					<li><a href="support.html">Support</a></li>
+					<li><a href="download.html">Download</a></li>
+				</ul>
+			</div>
+		</div>
+	-->
+<!--	
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a>
+  <a href="advantages.html">Advantages</a>
+  <a href="features.html">Features</a>
+  <a href="support.html">Support</a>
+  <a href="download.html">Download</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()"><img src="expand.jpg" class="logo_expand" alt="Home"></a>
+</div>
+-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html"><img src="ic_launcher_round.png" class="logo_main" alt="Home"></a>
+  <a href="advantages.html">Advantages</a>
+  <a href="features.html">Features</a>
+  <a href="support.html">Support</a>
+  <a href="download.html">Download</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+	
+	<div class="gap"></div>
+	
+	<div id="main">
+		<div class="row1">
+  			<div class="column1">
+    			<h2>Shortcuts to websites that can be added or removed</h2>
+    			<p>Apps can be added as easily as pressing add button and adding address + name. They can be removed by simple swipe to the left.</p>
+  			</div>
+  			<div class="column">
+				  <img class="img_main1" src="main.png" alt="Image">
+  				  <img class="img_main1" src="add.png" alt="Image">
+  				  <img class="img_main1" src="remove.png" alt="Image">
+  			</div>
+		</div>
+		
+		<div class="row2">
+  			<div class="column">
+				  <img class="img_main2" src="albumes.png" alt="Image">
+  				  <img class="img_main2" src="artists.png" alt="Image">
+  				  <img class="img_main2" src="playlists.png" alt="Image">
+			</div>
+			<div class="column2">
+    			<h2>Majority of standard music player features</h2>
+    			<p>Afraid that this app doesn't have standard music player features? Well don't be as app has majority of standard features.</p>
+			</div>
+		</div>
+		
+		<div class="row1">
+  			<div class="column1">
+    			<h2>Invite based reward system</h2>
+    			<p>We appreciate your dedication to helping our app and its growth. As such each sharing of the app will reward you with points that you can use in in-app store to buy upgrades for your app.</p>
+  			</div>
+  			<div class="column">
+				  <img class="img_main3" src="menu.png" alt="Image">
+  				  <img class="img_main3" src="store.png" alt="Image">
+			</div>
+		</div>
+		
+		<div class="row2">
+  			<div class="column">
+				  <img class="img_main4" src="google.png" alt="Image">
+  				  <img class="img_main4" src="google_music.png" alt="Image">
+			</div>
+			<div class="column2">
+    			<h2>Constant control over your music</h2>
+    			<p>Don't want to fully lose control over music while browsing? Well with our a UI that allows for seamless integration of your web content and music you will needn't fear.</p>
+  			</div>
+		</div>
+	</div>	
+
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+	
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main1");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex++;
+    	if (myIndex > x.length) {myIndex = 1}    
+    	x[myIndex-1].style.display = "block";  
+    	setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+	
+		<script>
+		var myIndex1 = 0;
+		carousel1();
+
+		function carousel1() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main2");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex1++;
+    	if (myIndex1 > x.length) {myIndex1 = 1}    
+    	x[myIndex1-1].style.display = "block";  
+    	setTimeout(carousel1, 4000); // Change image every 2 seconds
+}
+</script>
+	
+		<script>
+		var myIndex2 = 0;
+		carousel2();
+
+		function carousel2() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main3");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex2++;
+    	if (myIndex2 > x.length) {myIndex2 = 1}    
+    	x[myIndex2-1].style.display = "block";  
+    	setTimeout(carousel2, 4000); // Change image every 2 seconds
+}
+</script>
+	
+		<script>
+		var myIndex3 = 0;
+		carousel3();
+
+		function carousel3() {
+    	var i;
+    	var x = document.getElementsByClassName("img_main4");
+    	for (i = 0; i < x.length; i++) {
+       		x[i].style.display = "none";  
+    	}
+    	myIndex3++;
+    	if (myIndex3 > x.length) {myIndex3 = 1}    
+    	x[myIndex3-1].style.display = "block";  
+    	setTimeout(carousel3, 4000); // Change image every 2 seconds
+}
+</script>
+	
+	<footer>
+		<div id="menu-footer">
+				<p>Copyright ©Center.si, All rights reserved</p>
+				<a href="terms.html">Terms of use</a>
+				<a href="privacy.html">Privacy policy</a>
+		</div>
+	</footer>
+</body>
+</html>
